@@ -1,4 +1,5 @@
-/* reset */
+/* ---------reset---------------- */
+
 *{
     padding: 0;
     margin: 0;
@@ -8,12 +9,14 @@
     border: 1px solid black;
 }
 
-/* general rules */
+/* -------general rules---------- */
+
 html {
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;    
 }
 body {
+    width: 100%;
     min-width: 1200px;
 }
 .left {
@@ -24,20 +27,83 @@ body {
 }
 .container {
     width: 80%;
+    margin: 0 auto;
 }
-.clearfix {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+.button {
+    background-color: #0061FF;
+}
 
-/* header */
+.button>a {
+    color: white;
+}
+
+/* ----------- header ------------*/
+
+/* navbar */
+
 nav {
     height: 100px;
     width: 100%;
+    line-height: 100px;
+    min-width: 1200px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: red;
+    padding: 0 20px;
+    border-bottom: 1px solid lightgray;
 }
+nav #logo img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+  nav #logo {
+    width: 10%;
+    vertical-align: middle;
+  }
+.list-container-centered {
+    width: 80%;
+    float:left;
+}
+nav ul {
+    /* display: block; */
+    list-style-type: none;
+    width: 40%;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}  
+#inizia {
+    float: right;
+    width: 10%;
+    height: 100px;
+    position:relative
+}
+#inizia .button {
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
