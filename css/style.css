@@ -121,8 +121,6 @@ nav a {
 
 #jumbotron {
     width: 100%;
-    height: 700px; /* lascio altezza fissa per fare lo stesso effetto del sito al restringimento verticale della finestra */
-    /* height: 100vh; */
     background-color: #B4D0E7;
     padding: 5vw 0;
 }
@@ -135,7 +133,6 @@ nav a {
 }
 #jumbo-description {
     width: 30%;
-    height: 400px; 
 }
 #jumbo-image {
     width: 70%; 
