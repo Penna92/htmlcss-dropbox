@@ -1,0 +1,43 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.debug {
+    border: 1px solid black;
+}
+
+/* general rules */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;    
+}
+body {
+    min-width: 1200px;
+}
+.left {
+    float:left;
+}
+.right {
+    float: right;
+}
+.container {
+    width: 80%;
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* header */
+nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: red;
+}
