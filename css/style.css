@@ -57,9 +57,9 @@ h1 {
   font-weight: 700;
 }
 h2 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 10vh;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 5vh;
 }
 h3 {
   font-size: 32px;
@@ -280,7 +280,7 @@ nav > .list-container-centered > .right > li {
 .main-centered-column {
   width: 100%;
   min-height: 270px;
-  margin-bottom: 10vw;
+  margin-bottom: 8vw;
 }
 .enterprise {
   width: 70%;
@@ -330,3 +330,34 @@ nav > .list-container-centered > .right > li {
     padding: 20px;
 }
 /* /main-section-2 */
+
+/* main-section-3 */
+.main-section-3{
+    padding: 8vw 0;
+}
+.main-section-3-box {
+    width: 30%;
+    float: left;
+    margin: 30px 0;
+}
+.main-section-3-box:nth-child(3),
+.main-section-3-box:nth-child(6){
+    margin: 30px 5%;
+}
+.main-section-3-box-image{
+    width: 100%;
+}
+.main-section-3-box-image img{
+    width: 100%;
+    object-fit: cover;
+}
+.main-section-3-box-text>p{
+    font-size: 18px;
+}
+.main-section-3-box-text>p>a{
+    color: black;
+    text-decoration: underline;
+    padding: 0;
+}
+/* /main-section-3 */
+
