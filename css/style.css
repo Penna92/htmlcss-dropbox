@@ -1,16 +1,14 @@
 /* ---------reset---------------- */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 .debug {
-  border: 1px solid #D5D5D8;
+  border: 1px solid #d5d5d8;
 }
 
 /* -------general rules---------- */
-
 html {
   scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
@@ -42,7 +40,7 @@ main {
   background-color: #0061ff;
 }
 .button > a,
-.col-button > a{
+.col-button > a {
   color: white;
 }
 p {
@@ -55,8 +53,8 @@ p {
   margin-top: 40px;
 }
 h1 {
-  font-size: 4.5vw;
-  font-weight: 900;
+  font-size: 96px;
+  font-weight: 700;
 }
 h2 {
   font-size: 40px;
@@ -64,9 +62,14 @@ h2 {
   margin-bottom: 10vh;
 }
 h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 .centered-text {
   text-align: center;
@@ -75,7 +78,6 @@ h3 {
 /* ----------- header ------------*/
 
 /* navbar */
-
 nav {
   height: 100px;
   width: 100%;
@@ -106,20 +108,25 @@ nav #logo {
 }
 nav ul {
   list-style-type: none;
-  width: 40%;
-  text-align: center;
 }
 nav ul li {
   display: inline-block;
-  margin: 0 1vw;
+  margin: 0 0.6vw;
 }
 a {
   text-decoration: none;
   padding: 10px;
 }
 nav a {
+  font-size: 16px;
   font-weight: 600;
   color: black;
+}
+nav > .list-container-centered > .left > li {
+  float: left;
+}
+nav > .list-container-centered > .right > li {
+  float: right;
 }
 #inizia {
   float: right;
@@ -137,12 +144,12 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* /navbar */
 
 /* jumbotron */
-
 #jumbotron {
   width: 100%;
-  max-height: 700px;
+  max-height: 900px;
   background-color: #b4d0e7;
   padding: 5vw 0;
 }
@@ -172,8 +179,8 @@ nav a {
 #jumbo-description > .button {
   display: block;
   width: fit-content;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   margin-top: 20px;
 }
@@ -183,13 +190,13 @@ nav a {
   font-size: 12px;
   font-weight: 600;
 }
+/* /jumbotron */
 
 /* ------ /header ------ */
 
 /* --------- main ------- */
 
 /* main-section-1 */
-
 .circle {
   display: block;
   width: 25px;
@@ -208,55 +215,88 @@ nav a {
 .fatturazione > a:hover {
   box-shadow: 0px 0px 0px 5px #0061ff inset;
 }
-
 .main-col {
-    width: 30%;
-    height: 1000px;
-    margin-top: 30px;
+  width: 30%;
+  height: 1300px;
+  margin-top: 30px;
 }
 .main-col:nth-child(4) {
-    margin: 30px 5%;
+  margin: 30px 5%;
 }
 .category {
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    border-bottom: 1px solid #D5D5D8;
-    text-align: center;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d8;
+  text-align: center;
 }
-.rata>p{
-    margin-bottom: 50px;
-    color: grey;
+.rata > p {
+  margin-bottom: 50px;
+  color: grey;
 }
-
-.category i, .category p {
-    display: inline-block;
+.category i,
+.category p {
+  display: inline-block;
 }
 .main-col-content {
-    padding: 30px 25px;
+  padding: 30px 25px;
 }
-.main-col-content .icon{
-    display: inline-block;
-    margin: 30px 0;
-    width: 10%;
+.main-col-content .icon {
+  display: inline-block;
+  margin: 30px 0;
+  width: 8%;
 }
-.main-col-content .icon-text{
-    display: inline-block;
-    margin: 10px 0;
-    width: 80%;
-    vertical-align: middle;
+.main-col-content .icon-text {
+  display: inline-block;
+  margin: 10px 0;
+  width: 85%;
+  vertical-align: middle;
 }
-.col-button{
-    display: block;
-    width: 70%;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    margin-top: 20px;
-    background-color: #0061ff;
-    margin: 0 auto;
+.col-button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #0061ff;
+  margin: 30px auto;
 }
-
-
-
-
+.main-col-content > p > a {
+  color: #0061ff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.grey-row {
+  width: 60px;
+  height: 30px;
+  border-bottom: 1px solid #d5d5d8;
+  margin-bottom: 40px;
+}
+.fa-check {
+  color: #0061ff;
+  font-size: 18px;
+}
+.main-centered-column {
+  width: 100%;
+  min-height: 250px;
+  margin-bottom: 10vw;
+}
+.enterprise {
+  width: 70%;
+}
+.ufficio-vendite {
+  width: 30%;
+}
+.ufficio-vendite > .col-button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #0061ff;
+  margin: 0 auto;
+}
+.enterprise > h4 {
+  margin-bottom: 40px;
+}
+/* /main-section-1 */
