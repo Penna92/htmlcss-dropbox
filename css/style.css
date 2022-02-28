@@ -18,8 +18,7 @@ body {
   min-width: 1200px;
 }
 main {
-  padding-top: 25vh;
-  padding-bottom: 15vh;
+  padding-top: 10vw;
 }
 .left {
   float: left;
@@ -195,7 +194,9 @@ nav ul li .sub-menu {
 }
 #jumbo-image {
   width: 70%;
+  min-width: 750px;
   height: 60vh;
+  min-height: 320px;
   position: relative;
 }
 #jumbo-image img {
@@ -203,7 +204,7 @@ nav ul li .sub-menu {
   height: 100%;
   object-fit: contain;
   position: absolute;
-  top: 0;
+  bottom: -150px;
   left: 3vw;
 }
 #jumbo-description > .button {
