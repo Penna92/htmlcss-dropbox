@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Soluzioni business</title>
 </head>
+
 <body>
     <!-- intestazione -->
     <header>
         <!-- navbar -->
         <nav class="clearfix">
-        <!-- <div id="logo" class="left">
+            <!-- <div id="logo" class="left">
             <img src="img/logo-small.png" alt="logo" />
             </div> -->
-        <div class="list-container-centered">
-            <ul class="left">
-            <li>
-                <div id="logo" class="left">
-                <a href="#"><img src="img/logo-small.png" alt="logo" /></a>
-                </div>
-            </li>
-            <li><a href="#" class="bottom-border">Perchè Dropbox?</a></li>
-            <li><a href="#" class="bottom-border">Funzioni</a></li>
-            <li><a href="#" class="bottom-border">Piani e prezzi</a></li>
-            </ul>
-            <ul class="right">
-            <li>
-                <div class="button">
-                <a href="#">Inizia</a>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="bottom-border">Accedi</a>
-            </li>
-            <li class="show-sub-menu">
-                <a href="#">Contatta l'ufficio vendite <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub-menu">
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Invia Email</a></li>
-                <li><a href="#">+39 029953412</a></li>
+            <div class="list-container-centered">
+                <ul class="left">
+                    <li>
+                        <div id="logo" class="left">
+                            <a href="#"><img src="img/logo-small.png" alt="logo" /></a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="bottom-border">Perchè Dropbox?</a></li>
+                    <li><a href="#" class="bottom-border">Funzioni</a></li>
+                    <li><a href="#" class="bottom-border">Piani e prezzi</a></li>
                 </ul>
-            </li>
-            <li class="show-sub-menu">
-                <a href="#">Supporto <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub-menu">
-                <li><a href="#">Sicurezza</a></li>
-                <li><a href="#">Clienti</a></li>
-                <li><a href="#">Integrazioni di app</a></li>
-                <li><a href="#">Soluzioni</a></li>
-                <li><a href="#">Domande frequenti</a></li>
-            </li>
-            </ul>
-        </div>
+                <ul class="right">
+                    <li>
+                        <div class="button">
+                            <a href="#">Inizia</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom-border">Accedi</a>
+                    </li>
+                    <li class="show-sub-menu">
+                        <a href="#">Contatta l'ufficio vendite <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#" id="chat">Chat</a>
+                                <div class="hidden-chat">
+                                    <div class="chat">
+                                      <div class="chat-top-nav">
+                                        <i class="fa-solid fa-comments"></i>
+                                        <span>Live Chat</span>
+                                      </div>
+                                      <div class="chat-email">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email">
+                                        <input type="submit">
+                                      </div>
+                                      <div class="textarea">
+                                        <span>How can we help you?</span>
+                                        <textarea name="textarea" id="textarea" cols="40" rows="18"></textarea>
+                                      </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Invia Email</a></li>
+                            <li><a href="#">+39 029953412</a></li>
+                        </ul>
+                    </li>
+                    <li class="show-sub-menu">
+                        <a href="#">Supporto <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Clienti</a></li>
+                            <li><a href="#">Integrazioni di app</a></li>
+                            <li><a href="#">Soluzioni</a></li>
+                            <li><a href="#">Domande frequenti</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!-- /navbar -->
 
@@ -79,8 +100,9 @@
             </h2>
             <div class="description right">
                 <p>
-                    Il tuo tempo è prezioso. Introduci Dropbox nei flussi di lavoro della tua azienda per far sì che ogni minuto conti. Ecco come:
-                </p>                
+                    Il tuo tempo è prezioso. Introduci Dropbox nei flussi di lavoro della tua azienda per far sì che
+                    ogni minuto conti. Ecco come:
+                </p>
             </div>
         </div>
         <div class="block-2 container clearfix">
@@ -113,73 +135,74 @@
         </div>
     </main>
     <!-- /corpo centrale -->
-    
+
     <!-- footer -->
     <footer>
         <div class="container">
-        <div class="footer-navbar clearfix">
-            <ul>
-            <li>
-                <h3>Dropbox</h3>
-            </li>
-            <li><a href="#">Applicazione desktop</a></li>
-            <li><a href="#">Perchè Dropbox</a></li>
-            <li><a href="#">Piani</a></li>
-            <li><a href="#">Sicurezza</a></li>
-            <li><a href="#">Funzioni</a></a></li>
-            </ul>
-            <ul>
-            <li>
-                <h3>Prodotti</h3>
-            </li>
-            <li><a href="#">Applicazione desktop</a></li>
-            <li><a href="#">Perchè Dropbox</a></li>
-            <li><a href="#">Piani</a></li>
-            <li><a href="#">Sicurezza</a></li>
-            <li><a href="#">Funzioni</a></li>
-            </ul>
-            <ul>
-            <li>
-                <h3>Azienda</h3>
-            </li>
-            <li><a href="#">Applicazione desktop</a></li>
-            <li><a href="#">Perchè Dropbox</a></li>
-            <li><a href="#">Piani</a></li>
-            <li><a href="#">Sicurezza</a></li>
-            <li><a href="#">Funzioni</a></li>
-            </ul>
-            <ul>
-            <li>
-                <h3>Supporto</h3>
-            </li>
-            <li><a href="#">Applicazione desktop</a></li>
-            <li><a href="#">Perchè Dropbox</a></li>
-            <li><a href="#">Piani</a></li>
-            <li><a href="#">Sicurezza</a></li>
-            <li><a href="#">Funzioni</a></li>
-            </ul>
-            <ul>
-            <li>
-                <h3>Community</h3>
-            </li>
-            <li><a href="#">Applicazione desktop</a></li>
-            <li><a href="#">Perchè Dropbox</a></li>
-            <li><a href="#">Piani</a></li>
-            </ul>
-        </div>
-        <div class="language">
-            <i class="fa-solid fa-earth-americas"></i>
-            <select name="language" id="language">
-            <optgroup>
-                <option value="Italiano">Italiano</option>
-                <option value="English">English</option>
-                <option value="Español">Español</option>
-                <option value="Deutsch">Deutsch</option>
-            </optgroup>
-            </select>
-        </div>
+            <div class="footer-navbar clearfix">
+                <ul>
+                    <li>
+                        <h3>Dropbox</h3>
+                    </li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">Funzioni</a></a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Prodotti</h3>
+                    </li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Azienda</h3>
+                    </li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Supporto</h3>
+                    </li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Community</h3>
+                    </li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                </ul>
+            </div>
+            <div class="language">
+                <i class="fa-solid fa-earth-americas"></i>
+                <select name="language" id="language">
+                    <optgroup>
+                        <option value="Italiano">Italiano</option>
+                        <option value="English">English</option>
+                        <option value="Español">Español</option>
+                        <option value="Deutsch">Deutsch</option>
+                    </optgroup>
+                </select>
+            </div>
         </div>
     </footer>
-  <!-- /footer -->
+    <!-- /footer -->
 </body>
+
 </html>

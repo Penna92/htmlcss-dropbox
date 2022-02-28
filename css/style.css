@@ -109,7 +109,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin: 0 0.7vw;
-  /* position: relative; */
 }
 .bottom-border:hover {
   padding-bottom: 36px;
@@ -167,6 +166,57 @@ nav ul li .sub-menu {
 }
 .show-sub-menu:hover > .sub-menu {
   display: block;
+}
+.chat {
+  height: 70vh;
+  min-height: 500px;
+  width: 25vw;
+  min-width: 350px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+.chat-top-nav {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid black;
+  padding: 0 10px;
+  text-align: center;
+  position: relative;
+  color: white;
+  background-color: rgb(13, 36, 129);
+}
+.fa-comments {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 24px;
+}
+.chat > .chat-top-nav > span {
+  font-size: 18px;
+}
+.chat-email,
+.textarea {
+  padding: 30px 15px;
+}
+.chat-email {
+  text-align: center;
+}
+.textarea {
+  width: 100%;
+  text-align: center;
+}
+#textarea {
+  margin-top: 10px;
+}
+#chat:hover ~ .hidden-chat {
+  display: block;
+}
+.hidden-chat {
+  display: none;
 }
 /* /navbar */
 
