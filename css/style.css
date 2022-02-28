@@ -43,6 +43,10 @@ main {
 .col-button > a {
   color: white;
 }
+a {
+  text-decoration: none;
+  padding: 10px;
+}
 p {
   font-weight: 500;
 }
@@ -105,11 +109,12 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin: 0 0.8vw;
+  margin: 0 0.3vw;
+  /* position: relative; */
 }
-a {
-  text-decoration: none;
-  padding: 10px;
+.bottom-border:hover{
+  padding-bottom: 36px;
+  border-bottom: 3px solid black;
 }
 nav ul a {
   font-size: 18px;
@@ -131,6 +136,40 @@ nav li > .button > a {
   height: 40px;
   line-height: 40px;
   background-color: #0061ff;
+}
+nav ul li .sub-menu{
+  display: none;
+  float: none;
+  position: absolute;
+  top: 99px;
+  padding: 15px 0;
+  background-color: #fafafa;
+  line-height: 100%;
+  width: max-content;
+  border: 1px solid #d5d5d8;
+}
+.sub-menu>li {
+  display: block;
+}
+.sub-menu>li>a{
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 15px 0;
+  color: grey;
+}
+.sub-menu>li>a:hover{
+  text-decoration: underline;
+  color: black;
+  background-color: #d5d5d8;
+}
+.show-sub-menu:hover{
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 2px;
+}
+.show-sub-menu:hover > .sub-menu{
+  display: block;
 }
 /* /navbar */
 
@@ -369,7 +408,10 @@ nav li > .button > a {
   margin-top: 80px;
 }
 .main-section-5-aside {
-  width: 30%;
+  width: calc(30vw - 6.5px);
+  min-width: 360px;
+  min-height: 360px;
+  /* le immagini devono rimanere quadrate */
 }
 .main-section-5-centered {
   background-color: #f5f5f5;
@@ -379,7 +421,7 @@ nav li > .button > a {
 }
 .main-section-5-aside,
 .main-section-5-centered {
-  height: 30vw;
+  height: calc(30vw - 6.5px); /* --->tolta la width della scrollbar laterale (13px circa) */
   min-height: 358px;
 }
 .aside-block-image {
@@ -388,6 +430,9 @@ nav li > .button > a {
   width: 50%;
   padding: auto;
   position: relative;
+  min-width: 180px;
+  min-height: 180px
+  /* le immagini devono rimanere quadrate */
 }
 .aside-block-image img {
   display: block;
@@ -529,6 +574,7 @@ footer ul li a:hover {
 
 /* language */
 select {
+  max-width: 100px;
   vertical-align: middle;
   font-size: 16px;
   font-weight: bold;
