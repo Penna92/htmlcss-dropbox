@@ -18,7 +18,7 @@ body {
   min-width: 1200px;
 }
 main {
-  padding-top: 10vw;
+  padding-top: 25vh;
 }
 .left {
   float: left;
@@ -108,7 +108,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin: 0 0.3vw;
+  margin: 0 0.7vw;
   /* position: relative; */
 }
 .bottom-border:hover {
@@ -116,7 +116,7 @@ nav ul li {
   border-bottom: 3px solid black;
 }
 nav ul a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: black;
 }
@@ -130,8 +130,7 @@ nav li > .button {
   display: inline;
 }
 nav li > .button > a {
-  /* width: 80px; */
-  padding: 10px 30px;
+  padding: 5px 20px;
   height: 40px;
   line-height: 40px;
   background-color: #0061ff;
@@ -140,8 +139,7 @@ nav ul li .sub-menu {
   display: none;
   float: none;
   position: absolute;
-  top: 99px;
-  padding: 15px 0;
+  top: 100px;
   background-color: #fafafa;
   line-height: 100%;
   width: max-content;
@@ -204,7 +202,7 @@ nav ul li .sub-menu {
   height: 100%;
   object-fit: contain;
   position: absolute;
-  bottom: -150px;
+  bottom: -100px;
   left: 3vw;
 }
 #jumbo-description > .button {
@@ -221,6 +219,7 @@ nav ul li .sub-menu {
   font-size: 14px;
   font-weight: 600;
 }
+
 /* /jumbotron */
 
 /* ------ /header ------ */
@@ -605,3 +604,58 @@ select {
 /* /language */
 
 /* ------ /footer ------ */
+
+/* ------- page 2 - soluzioni ------- */
+
+/* jumbo2 */
+#jumbo2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* /jumbo2 */
+
+/* ------page-2-main------- */
+#page2-main {
+  padding: 10vh;
+}
+.block-1 {
+  margin-bottom: 10vw;
+}
+.block-1 h2 {
+  width: 50%;
+}
+.description {
+  width: 40%;
+}
+.description > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.block-2 > ul {
+  float: left;
+  width: 20%;
+  padding: 30px 0;
+  border-top: 1px solid black;
+}
+.block-2 > ul > li {
+  list-style: none;
+}
+.block-2 > ul > li > a {
+  display: block;
+  margin-top: 20px;
+  padding: 0;
+  color: rgb(99, 158, 207);
+}
+.block-2 > ul:nth-child(1),
+.block-2 > ul:nth-child(2),
+.block-2 > ul:nth-child(3) {
+  margin-right: calc(20% / 3);
+}
+.block-2 > ul > li:first-child {
+  font-size: 18px;
+}
+.block-2 > ul > li > a:hover {
+  color: black;
+}
+/* --------/page-2-main------- */
