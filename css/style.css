@@ -112,7 +112,7 @@ nav ul li {
   margin: 0 0.3vw;
   /* position: relative; */
 }
-.bottom-border:hover{
+.bottom-border:hover {
   padding-bottom: 36px;
   border-bottom: 3px solid black;
 }
@@ -137,7 +137,7 @@ nav li > .button > a {
   line-height: 40px;
   background-color: #0061ff;
 }
-nav ul li .sub-menu{
+nav ul li .sub-menu {
   display: none;
   float: none;
   position: absolute;
@@ -148,27 +148,27 @@ nav ul li .sub-menu{
   width: max-content;
   border: 1px solid #d5d5d8;
 }
-.sub-menu>li {
+.sub-menu > li {
   display: block;
 }
-.sub-menu>li>a{
+.sub-menu > li > a {
   display: block;
   font-size: 18px;
   font-weight: 400;
   margin: 15px 0;
   color: grey;
 }
-.sub-menu>li>a:hover{
+.sub-menu > li > a:hover {
   text-decoration: underline;
   color: black;
   background-color: #d5d5d8;
 }
-.show-sub-menu:hover{
+.show-sub-menu:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-decoration-thickness: 2px;
 }
-.show-sub-menu:hover > .sub-menu{
+.show-sub-menu:hover > .sub-menu {
   display: block;
 }
 /* /navbar */
@@ -421,7 +421,9 @@ nav ul li .sub-menu{
 }
 .main-section-5-aside,
 .main-section-5-centered {
-  height: calc(30vw - 6.5px); /* --->tolta la width della scrollbar laterale (13px circa) */
+  height: calc(
+    30vw - 6.5px
+  ); /* --->tolta la width della scrollbar laterale (13px circa) */
   min-height: 358px;
 }
 .aside-block-image {
@@ -431,7 +433,7 @@ nav ul li .sub-menu{
   padding: auto;
   position: relative;
   min-width: 180px;
-  min-height: 180px
+  min-height: 180px;
   /* le immagini devono rimanere quadrate */
 }
 .aside-block-image img {
@@ -495,7 +497,7 @@ blockquote p:nth-child(2) {
   padding-bottom: 80px;
 }
 .drop-down-menu {
-  height: 100px;
+  min-height: 100px;
   line-height: 100px;
   border-bottom: 1px solid #d5d5d8;
   position: relative;
@@ -527,21 +529,27 @@ blockquote p:nth-child(2) {
 }
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: lightgrey;
-  width: 40%;
   min-width: 160px;
   height: fit-content;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
-  padding: 12px 16px;
-  z-index: 2000;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
+  padding: 12px 0px;
+  line-height: 50px;
+}
+.dropdown-content > p {
+  display: block;
+  width: 80%;
+  float: left;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  z-index: 4000;
+}
+.dropdown-content > p > a {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.dropdown-content > p > a:hover {
+  color: #0061ff;
 }
 /* /main-section-7 */
 
@@ -574,18 +582,17 @@ footer ul li a:hover {
 
 /* language */
 select {
-  max-width: 100px;
   vertical-align: middle;
   font-size: 16px;
   font-weight: bold;
   border: none;
   color: rgb(101, 101, 101);
   background-color: black;
-  vertical-align: middle;
 }
-.fa-book-atlas {
+.fa-earth-americas {
   color: rgb(101, 101, 101);
   vertical-align: middle;
+  margin-right: 20px;
 }
 .language {
   margin-top: 150px;
